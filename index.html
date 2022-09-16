@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/function.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+     <!-- Add the slick-theme.css if you want default styling -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+     <!-- Add the slick-theme.css if you want default styling -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+   </head>
+  
+   <body>
+<!----------------Top Bar--------------------------------------------->
+<div class="container-fluid">
+    <div class="row top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 top_icon">
+                    <i class="fa-solid fa-location-dot" style="font-size:16px ;"></i> <span class="top_icon_text">36/A Rashbihari Avenue, Kolkata- 700029</span>
+                  </div>
+                  <div class="col-md-4 col-xs-12 top_icon">
+                   <i class="fa fa-phone"  style="font-size:16px ;"></i> <span class="top_icon_text">Call Us - 9876543210</span>
+                  </div>
+
+                  <div class="col-md-2 col-xs-12"></div>
+
+                  <div class="col-md-2 col-xs-12 booknow">
+                    <button  class="open-button btn_2" onclick="openForm()"><i class="fa-sharp fa-solid fa-user" style="font-size: 16px; margin-right: 5px;"></i>Sign in</button>
+
+                      <div class="form-popup" id="myForm">
+                        <form action="" class="form-container">
+                          <h1><center>Login</center></h1>
+
+                  <label for="name"><b>Name </b></label>
+                  <input type="text" placeholder="Enter Your Name " name="name" required>
+              
+                  <label for="email"><b>Email </b></label>
+                  <input type="text" placeholder="Enter  valid Email " name="email" required>
+                  
+                  <label for="email"><b>Phone </b></label>
+                  <input type="text" placeholder="Enter phone number" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <br>
+                  <center><a href="">Forgot password?</a></center>
+                  <br><br>
+              
+              
+                  <button type="submit" class="btn_3">Submit</button>
+                  <button type="close" class="btn_3" onclick="closeForm()">close</button>
+                </form>
+              </div>
+            </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+<!-----------------nav bar-------------------------------------------------------->
+<div class="container-fluid">
+    <div class="row fixednav">
+      <div class="container">
+        <div class="row navbar">
+          <div class="col-2"><img src="images/photologonew.png" alt=""></div>
+          <div class="col-7">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+              
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Gallery
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Wedding</a>
+                      <a class="dropdown-item" href="#">Pre Wedding</a>
+                      <a class="dropdown-item" href="#">Ocassional</a>
+                      <a class="dropdown-item" href="#">portrait</a>
+                      <a class="dropdown-item" href="#">videography</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Blog
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Blog</a>
+                      <a class="dropdown-item" href="#">Testimonials</a>
+                      <a class="dropdown-item" href="#">Terms & Conditions</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Contact</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </nav>
+          </div>
+          
+          <div class="col-md-3 col-sm-12">
+            <div class="form">
+              <i class="fa fa-search"></i>
+              <input type="text" class="form-control form-input" placeholder="Search anything...">
+              <span class="left-pan"><i class="fa fa-microphone" style="color:black ;"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!----------------------carousel---------------------------------------------->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/carousel_slider_1.jpg" alt="First slide">
+      <div class="carousel-caption text-center">
+        <h4 class="caro_sel">Every Moment Has a Special Vibes..  </h4>
+        <p><button class="btn_booking">Book Now</button></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/carousel_slider_2.jpg" alt="Second slide">
+      <div class="carousel-caption ">
+        <h4 class="caro_sel">A Good Photograph is Knowing Where to Stand..</h4>
+        <p><button class="btn_booking">Book Now</button></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/carousel_slider_3.jpg" alt="Third slide">
+      <div class="carousel-caption ">
+        <h4 class="caro_sel">Every Moment Has a Special Vibes ..</h4>
+        <p><button class="btn_booking">Book Now</button></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/carousel_slider_4.jpg" alt="Fourth slide">
+      <div class="carousel-caption ">
+        <h4 class="caro_sel">A Good Photograph is Knowing Where to Stand..</h4>
+        <p><button class="btn_booking">Book Now</button></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/carousel_slider_5.jpg" alt="Fifth slide">
+      <div class="carousel-caption ">
+        <h4 class="caro_sel">Be Ready To Capture Your Special Moment..</h4>
+        <p><button class="btn_booking">Book Now</button></p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!--------------------------box card--------------------------------------------------->
+<div class="box">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <center><h2 class="cata">Why Choose Us ?</h2></center>
+      </div>
+    </div>
+     <div class="row">
+     
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+             
+        <div class="box-part text-center">
+                      <div class="title">
+                         <h3>About Us</h3>
+                          <img src="images/photo4.png" class="rounded-circle img-fluid" alt="">
+                      </div>
+                      <div class="text">
+                      <span>Studio photography is used to shoot a wide variety of subjects, including people, animals and wide variety of products, from automobiles to jewellery.A photography studio will usually start out as a blank space.  </span>
+                      </div>
+                          <button class="btn">read more</button>
+                      </div>
+        </div>	 
+      
+       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+             
+        <div class="box-part text-center">
+            <div class="title">
+            <h3>Our Mission</h3>
+                          <img src="images/photo1.png"  class="rounded-circle img-fluid" alt="">
+          </div>
+                      <div class="text">
+                          <span>Our mission in photography might be to create beautiful images to uplift, encourage, and inspire others. If that is the case, you want to share your photos as much as you can with others, last 5 years covering these.</span>
+          </div>
+                          <button class="btn">read more</button>
+                      
+        </div>
+      </div>	 
+      
+       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+             
+        <div class="box-part text-center">
+                      
+                      <div class="title">
+            <h3>Our Vision</h3>
+                          <img src="images/photo2.png"  class="rounded-circle img-fluid" alt="">
+          </div>
+                      
+          <div class="text">
+            <span>
+            A vision is something abstract: an idea or a concept. Vision is made real through creative work. In photography it is made real through the creation of photographs that express your vision & lifetime memory for u.</span>
+          </div>
+                           <button class="btn">read more</button>
+                      
+        </div>
+       </div>	 
+      
+  </div>		
+  </div>
+</div>
+<!---------------------our service--------------------------------------->
+<div class="container-fluid">
+  <div class="row">
+    <div class="container">
+      <div class="row service_text">
+        <div class="col-12">
+          <center>
+            <h2>Our Service</h2>
+            <p>WHAT WE DO</p>
+          </center>
+        </div>
+        </div>
+        <div class="row our_service">
+          <!------------------->
+          <div class="col-md-4 col-xs-12">
+            <img src="images/service_1.jpg" alt=""class="service_image">
+          </div>
+           <!------------------->
+           <div class="col-md-4 col-xs-12">
+            <img src="images/service_2.jpg" alt="" class="service_image">
+          </div>
+           <!------------------->
+           <div class="col-md-4 col-xs-12">
+            <img src="images/service_3.jpg" alt="" class="service_image">
+          </div>
+          </div>
+        <!------------------------------------------------------->
+        <div class="row our_service">
+          <!------------------->
+          <div class="col-md-4 col-xs-12">
+            <img src="images/service_4.jpg" alt="" class="service_image">
+          </div>
+           <!------------------->
+           <div class="col-md-4 col-xs-12">
+            <img src="images/service_7.jpg" alt="" class="service_image">
+          </div>
+           <!------------------->
+           <div class="col-md-4 col-xs-12">
+            <img src="images/service_6.jpg" alt="" class="service_image">
+          </div>
+          </div>
+      
+    </div>
+  </div>
+</div>
+<!---------------------slider------------------------------------->
+<div class="container-fluid">
+  <div class="row">
+    <div class="container">
+      <div  class="row catalogue">
+          <div class="col-12 cata">
+              <h2><center>Catalogue</center></h2>
+              <center><span class="quote">Here is a collection of our shoot, style & thoughts..Come, take a look</center></span> 
+          </div>
+         
+          <div class="customer-logos col-12">
+                  <div class="col-3 float-left"><img src="images/prewedding.jpg" class="img-fluid" alt=""><p>Pre Wedding</p></div>
+                  <div class="col-3 float-left"><img src="images/haldi.jpg" class="img-fluid" alt=""><p>Ritual Special</p></div>
+                  <div class="col-3 float-left"><img src="images/Featured-image-Blog-1024x682.jpg" class="img-fluid" alt=""><p>Amazing bride</p></div>
+                  <div class="col-3 float-left"><img src="images/most_popular.jpg" class="img-fluid"  alt=""><p>Most popular</p></div>
+                  <div class="col-3 float-left"><img src="images/kiddzzone.jpg" class="img-fluid" alt=""><p>Kidzz zone</p></div>
+                  <div class="col-3 float-left"><img src="images/most-popularnew.png" class="img-fluid" alt=""><p>Wedding Canvus</p></div>
+                  <div class="col-3 float-left"><img src="images/Durgapuja.jpg" class="img-fluid" alt=""><p>Special Event</p></div>
+                  <div class="col-3 float-left"><img src="images/Rituals-of-Bengali-wedding.jpg" class="img-fluid" alt=""><p>Wedding Special</p></div>
+                  <div class="col-3 float-left"><img src="images/modelshoot.jpg" class="img-fluid" alt=""><p>Model Shoot</p></div>
+                 
+          </div>
+      </div>
+      
+  </div>
+  </div>
+</div>
+<script>
+  $(document).ready(function(){
+      $('.customer-logos').slick({
+        autoplay:true,
+        slidesToShow: 4,
+          slidesToScroll: 1,
+          arrows: false
+      });
+    });
+</script>
+<!---------------------testimonials------------------------------------------------>
+<div class="container-fluid">
+  <div class="row testimonials">
+    <div class="col-12">
+      <center>
+        <h2>Testimonials</h2>
+        <p>WHAT OUR CLIENT SAY</p>
+      </center>
+    </div>
+    <div class="container mt-5 mb-5">
+    
+      <div class="row g-2">
+          <div class="col-md-4 col-xs-12">
+              <div class="card p-3 text-center px-4">
+                  
+                  <div class="user-image">
+                      
+              <img src="images/pro1.png" class="rounded-circle" width="80">
+                      
+                  </div>
+                  
+                  <div class="user-content">
+                      
+                      <h5>Neha Roychoudhury</h5>
+                      
+                      <p>Love this Photography. They are awesome and an amazing person - just what you need to capture those moments of your life that you want to keep forever! Call her now.</p>
+                      
+                  </div>
+                  
+                  <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      
+                  </div>
+                  
+              </div>
+          </div>
+          
+          <div class="col-md-4 col-xs-12">
+              
+              <div class="card p-3 text-center px-4">
+                  
+                  <div class="user-image">
+                      
+              <img src="images/pro2.png" class="rounded-circle" width="80"
+                      >
+                      
+                  </div>
+                  
+                  <div class="user-content">
+                      
+                      <h5>Ajay B</h5>
+                      
+                      <p> Creative and easy-to-get-along with photographers that I have worked with. Our engagement session was in about 20 F weather,patience, energy and creativity took us through it. .</p>
+                      
+                  </div>
+                  
+                  <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      
+                  </div>
+                  
+              </div>
+              
+          </div>
+          
+          <div class="col-md-4 col-xs-12">
+              
+              <div class="card p-3 text-center px-4">
+                  
+                  <div class="user-image">
+                      
+              <img src="images/pro3.png" class="rounded-circle" width="80"
+                      >
+                      
+                  </div>
+                  
+                  <div class="user-content">
+                      
+                      <h5>Veera Sharma</h5>
+                      
+                      <p>Love this Photography. They are awesome and an amazing person - just what you need to capture those moments of your life that you want to keep forever! Call her now.</p>
+                      
+                  </div>
+                  
+                  <div class="ratings">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      
+                  </div>
+                  
+              </div>
+              
+          </div>
+          
+          
+      </div>
+      
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <center> <button class="btn">view all <i class="fa-solid fa-arrow-right"></i></button></center>
+      </div>
+  </div>
+</div>
+
+<!---------------------Gallery------------------------------------------>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+  <h2 class="text-center g_shoot"> Popular Photos</h2>
+  <center><P class="gal">Have a look on some of the beautiful and glamorous photographs captured by our photographers.</P></center>
+  </div>
+  </div>
+  <div class="row gallery">
+    <div class="col-sm-4">
+        <div class="item"><img src="images/wedding.jpg" class="img-thumbnail"><p>Bridal</p></div>
+      
+    </div>
+    <div class="col-sm-4">
+      <div class="item"><img src="images/preweddingshoot.jpg" class="img-thumbnail"><p>Pre wedding</p></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="item"><img src="images/kidsspecial.jpg" class="img-thumbnail"><p>Rice Ceremony</p></div>
+    </div>
+      <div class="col-sm-4">
+        <div class="item"><img src="images/Traditional.jpg" class="img-thumbnail"><p>Wedding</p></div>
+      </div>
+      <div class="col-sm-4">
+        <div class="item"><img src="images/haldispecial.jpg" class="img-thumbnail"><p>Haldi</p></div>
+      
+    </div>
+      <div class="col-sm-4">
+        <div class="item"><img src="images/coupleshoot.jpg" class="img-thumbnail"><p>Ocassional</p></div>
+  </div>
+  <div class="col-12">
+    <center> <button class="btn">view all <i class="fa-solid fa-arrow-right"></i></button>center>
+    </div>
+</div>
+</div>
+<!---------------------videography------------------------------------------------------>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center g_shoot"> Popular videos</h2>
+    </div>
+  </div>
+  <div class="row youtube">
+    <div class="col-md-3 col-sm-12">
+        <div class="video"><iframe width="350" height="300" src="https://www.youtube-nocookie.com/embed/GUFP-f8Dl10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="video"><iframe width="350" height="300" src="https://www.youtube-nocookie.com/embed/GUFP-f8Dl10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    
+  </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="video"><iframe width="350" height="300" src="https://www.youtube-nocookie.com/embed/GUFP-f8Dl10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="video"><iframe width="350" height="300" src="https://www.youtube-nocookie.com/embed/GUFP-f8Dl10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 btn_video">
+    <center><button class="btn">view all <i class="fa-solid fa-arrow-right"></i></button></center>
+    </div>
+  </div>
+</div>
+<!-------------------------Blog------------------------------------->
+<div class="container-fluid">
+  <div class="row blog_part">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <center>
+            <h2>Our Blog</h2>
+            <p>UPDATE WITH OUR DAILY NEWS</p>
+          </center>
+        </div>
+      </div>
+      <div class="row">
+        <!-------------------->
+        <div class="col-md-6 col-xs-12 blog_para">
+          <img src="images/blogimage_1.png" alt="" class="img_blog">
+          <span class="blog_text"><h4>Camera Fodder</h4> 
+            <p class="date"><img src="images/calender_1_new.png" width="16px" height="16px" class="img_dt"><span class="dt_text">Feb 25,2022</span></p>
+          <p class="blog_paragraph">Photography provides valuable information to their readers whom are interested in photography. The site post articles about photography tips, gear recommendation, camera & lens reviews, as well as photography editing tips.</p>
+          </span>
+        </div>
+        <!----------------------->
+        <!-------------------->
+        <div class="col-md-6 col-xs-12 blog_para">
+          <img src="images/blogimage_2.jpg" alt="" class="img_blog">
+          <span class="blog_text"><h4>Moments matter</h4> 
+            <p class="date"><img src="images/calender_1_new.png" width="18px" height="18px" class="img_dt"><span class="dt_text">july 14,2022</span></p>
+         <p class="blog_paragraph"> Photography provides valuable information to their readers whom are interested in photography. The site post articles about photography tips, gear recommendation, camera & lens reviews, as well as photography editing tips.</p>
+        </span>
+        </div>
+        <!----------------------->
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 btn_video">
+    <center><button class="btn">view all <i class="fa-solid fa-arrow-right"></i></button></center>
+    </div>
+  </div>
+</div>
+<!------------------footer------------------------------------------------>
+<footer class="footer">
+  <div class="container bottom_border">
+  <div class="row">
+  <div class="col-12 col">
+  <h5 class="headin5_amrc col_white_amrc pt2"></h5>    <!--headin5_amrc-->
+ 
+  
+  </div>
+  
+  
+  <div class=" col-sm-4 col-md  col-6 col">
+  <h5 class="headin5_amrc col_white_amrc "><img src="images/photologonew.png" alt=""></h5>
+  <!--headin5_amrc-->
+  <ul class="footer_ul_amrc">
+  
+  <li class="footer_text_para">Photography provides valuable information to their readers whom are interested in photography. The site post articles about photography tips, gear recommendation, camera & lens reviews, photography editing tips.</li>
+  <li class="footer_text"><i class="fa-solid fa-location-dot"> 36/A Rasbihari Avenue , Kol-700089</i></li>
+  <li class="footer_text"><i class="fa-solid fa-phone"></i> +9876543210</li>
+  <li class="footer_text"><i class="fa-solid fa-envelope"></i> photography@gmail.com</li>
+  </ul>
+  </div>
+   <!--footer_ul_amrc ends here-->
+  
+  <div class=" col-sm-4 col-md  col-6 col li_nk">
+  <h5 class="headin5_amrc col_white_amrc ">Infos & relcteches</h5>
+  <!--headin5_amrc-->
+  <ul class="footer_ul_amrc">
+  <li><a href="">Home </a></li>
+  <li><a href="">Gallery</a></li>
+  <li><a href="">Portfolio </a></li>
+  <li><a href="">Blog</a></li>
+  <li><a href="">Contact</a></li>
+  <li><a href="">Videography</a></li>
+  <li><a href="">Booking</a></li>
+  <li><a href="">Terms & conditions</a></li>
+  </ul>
+  <!--footer_ul_amrc ends here-->
+  </div>
+  
+  
+  <div class=" col-sm-4 col-md  col-6 col">
+   
+  <h5 class="headin5_amrc col_white_amrc">Follow us on</h5>
+  <ul class="footer_ul2_amrc">
+      <a href="#"><i class="fa-brands fa-facebook-f text-white" style="font-size: 22px; margin-right: 10px;"></i></a></span>
+      <a href="#"><i class="fa-brands fa-instagram text-white" style="font-size: 22px; margin-right: 10px;"></i></i> </a>
+      <a href="#"> <i class="fa-brands fa-twitter text-white" style="font-size: 22px; margin-right: 10px;"></i></a>
+      <a href="#"> <i class="fa-brands fa-youtube text-white" style="font-size: 22px; margin-right: 10px;"></i></a>
+
+  </ul>
+  <br>
+  <h5 class="headin5_amrc col_white_amrc ">Newsletter</h5>
+  <ul class="footer_ul2_amrc">
+    <form class="newsletter">
+      <input type="text" name="search" placeholder="enter your email">
+      <button class="newsletter_btn"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </ul>
+ <!--footer_ul2_amrc ends here-->
+  </div>
+  </div>
+  </div>
+  <div class="container">
+  <!--foote_bottom_ul_amrc ends here-->
+  <p class=" footer_text text-center">Copyright @2022 | Designed With by <a href="">Your Company Name</a></p>
+  <!--social_footer_ul ends here-->
+  </div>
+  </footer>
+  <!-------------------------------------->
+
+</body>
+</html>
