@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
-    
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');   
 body{padding: 0;margin: 0;background-color: rgb(40, 45, 45);font-family: 'Roboto', sans-serif;}
  /*-----------------------top------------------------------------*/
  
- .top_icon{color: rgb(202, 135, 10) ;font-size: 16px;margin-top: 2px;}
- .top{color: #fffefe; padding: 10px; background-color: #101111;}
+ .top_icon{color: rgb(202, 135, 10) ;font-size: 14px;margin-top: 2px;font-weight: 500;}
+ .top{color: #fffefe; padding: 6px; background-color: #101111;}
  .searchbox li{display: inline; text-decoration: none;}
  .top_icon_text{margin-left: 5px;}
 /*---------------form popup--------*/
@@ -50,7 +50,7 @@ body{padding: 0;margin: 0;background-color: rgb(40, 45, 45);font-family: 'Roboto
     opacity: 1;
   }
   /*-----end form popup------*/
-  .btn_2{background-color : rgb(202, 135, 10);font-weight: 500;border: 1px solid   rgb(202, 135, 10);border-radius: 40px;color: rgb(247, 246, 244); padding: 4px 12px 4px 12px ; font-size: 18px;cursor: pointer;} 
+  .btn_2{background-color : rgb(202, 135, 10);font-weight: 500;border: 1px solid   rgb(202, 135, 10);border-radius: 40px;color: rgb(247, 246, 244); padding: 4px 12px 4px 12px ; font-size: 14px;cursor: pointer;} 
   .btn_3 {background-color: rgb(202, 135, 10); border: none; color: rgb(3, 3, 3);padding: 15px 32px;text-align: center;text-decoration: none; display: inline-block;font-size: 16px;margin: 4px 2px; cursor: pointer;width: 100%;}
   .btn_3:hover{background-color:transparent ;border: 1px solid  rgb(202, 135, 10) ;color:  rgb(10, 10, 10);}
   .form-inputs{padding-bottom:5px ;}
@@ -65,36 +65,19 @@ body{padding: 0;margin: 0;background-color: rgb(40, 45, 45);font-family: 'Roboto
   .left-pan i{padding-left: 8px;}
   .form-input{height: 35px;text-indent: 30px;border-radius: 40px;}
   .form-input:focus{box-shadow: none;border:none;}
-  .nav-item .dropdown-item:hover{background-color:rgb(202, 135, 10) ;}
+  .nav-item .dropdown-item:hover{background-color:rgb(202, 135, 10) ; color: #f7f9fb;}
   
   /*--------------------------------------------------------------------------------------*/
- .caro_sel{top: 20%;left: 80%;font-size: 35px;font-weight: 800;}
- .btn_booking{background-color : rgb(202, 135, 10);font-weight: 500;border: 2px solid   rgb(202, 135, 10);border-radius: 40px;color:  rgb(252, 251, 251); padding: 6px 14px 6px 14px ; font-size: 22px;cursor: pointer;}
- .carousel-item:after {
-  content:"";
-  position:absolute;
-  top:350px;                      /*blakish background*/
-  bottom:0px;
-  left:0;
-  right:0;
-  background:rgba(33, 32, 32, 0.6);
-}
+ .caro_sel{top: 20%;left: 80%;font-size: 45px;font-weight: 800;font-family: 'Dancing Script', cursive; box-shadow: 20px rgb(8, 8, 8) ;}
+ .btn_booking{background-color : rgb(202, 135, 10);font-weight: 500;border: 2px solid   rgb(202, 135, 10); border-radius: 40px;color:rgb(252, 251, 251); padding: 6px 14px 6px 14px ; font-size: 22px;cursor: pointer;}
+
 /*----------------------------*/
 /*-----------------------------*/
 @media screen and (max-width: 767px) {
   .carousel-caption h4{width: 100%;font-size:12px;top: 26px;left: 12px;position: absolute;}
   .btn_booking{padding:3px 6px 3px 8px; background-color:rgb(202, 135, 10);border: 1px solid rgb(202, 135, 10);border-radius: 40px; color: rgb(254, 253, 251);font-size: 10px;top: 43px;left: 90px;position: absolute;}
   .service_image{margin-top: 15px;}
-  .carousel-item:after {
-    content:"";
-    position:absolute;
-    top:75px;                      /*blakish background*/
-    bottom:0;
-    left:0;
-    right:0;
-    background:rgba(33, 32, 32, 0.6);
-  }
-   .nav-item .dropdown-item:hover{background-color:rgb(202, 135, 10) ;}
+  .nav-item .dropdown-item:hover{background-color:rgb(202, 135, 10) ;}
   .customer-logos p {color: rgb(248, 246, 243);font-weight:500;top: 0px;left: 0px;background-color:rgb(48, 44, 44);font-size: 5px;padding: 0px; }
   .testimonials .card{margin-top: 16px;}
   .img_blog{height: 120px;width: 120px;}
@@ -249,6 +232,16 @@ footer { width:100%; background-color: rgb(36, 36, 36); min-height:200px; paddin
 .footer_text{color: #fafbf7;}
 .footer_text_para{color: #fafbf7;font-size:12px ;margin-bottom: 8px;}
 .li_nk{margin-left: 15px;}
+
+
+/*------------wedding-----------------------------------------------*/
+.wedding_backimage{background-image:url(../images/carousel_slider_1.jpg)  ;height: 500px ;background-size: cover;}
+.backimage_text{top: 80%;left: 50%;display: inline-block;margin-top:250px ;color: rgb(249, 245, 244); font-size: 28px;}
+ .btn_booking_wedding{background-color : rgb(202, 135, 10);font-weight: 500;border: 2px solid   rgb(202, 135, 10);border-radius: 40px;color:  rgb(252, 251, 251); padding: 6px 14px 6px 14px ; font-size: 22px;cursor: pointer;}
+@media screen and (max-width: 767px) {
+  .wedding_backimage{background-position: center;}
+}
+
 
 
 
